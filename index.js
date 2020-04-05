@@ -32,7 +32,6 @@ void (async () => {
  */
 airgram.on('updateNewMessage', async ({ update }, next) => {
   const { message } = update;
-  const { id: messageId, chatId, replyToMessageId } = message;
 
   if (
     me &&
@@ -42,6 +41,7 @@ airgram.on('updateNewMessage', async ({ update }, next) => {
     message.content.text.text.startsWith(operator)
   ) {
     const messageText = message.content.text.text.substr(1);
+    const { id: messageId, chatId, replyToMessageId } = message;
 
     for (let index = 0; index <= stop; index++) {
       const t = setTimeout(() => {
