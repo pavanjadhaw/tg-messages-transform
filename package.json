@@ -1,0 +1,17 @@
+{
+  "name": "telegram-message-shuffler",
+  "version": "0.0.1",
+  "description": "a telegram client to transform message and make them do cool stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  },
+  "keywords": [],
+  "author": "Pavan Jadhaw <pavanjadhaw96@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "airgram": "^3.0.2",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
