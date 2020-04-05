@@ -1,8 +1,4 @@
-#### demo
-
-![demo](https://media.giphy.com/media/VzkCMjptIwX1jUxX3c/source.gif)
-
-&nbsp;
+#### telegram messages transform
 
 #### requirements
 
