@@ -1,5 +1,7 @@
 #### telegram messages transform
 
+[demo](https://www.youtube.com/watch?v=Dlo-e7XrseU&feature=youtu.be) (youtube)
+
 #### requirements
 
 1. Build TDLib library according the [instruction](https://github.com/tdlib/td#building).
