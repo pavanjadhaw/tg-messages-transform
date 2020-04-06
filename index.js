@@ -22,19 +22,18 @@ airgram.use(
   })
 );
 
-let me;
-void (async () => {
-  me = toObject(await airgram.api.getMe());
-})();
-
 /**
  * on every new message
  */
 airgram.on('updateNewMessage', async ({ update }, next) => {
   const { message } = update;
 
+  const me = toObject(await airgram.api.getMe());
+
   if (
     me &&
+    message.isOutgoing &&
+    message.canBeEdited &&
     message.senderUserId === me.id &&
     message.content._ === 'messageText' &&
     message.content.text._ === 'formattedText' &&
